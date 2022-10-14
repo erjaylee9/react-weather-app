@@ -4,8 +4,7 @@ import Forecast from "./forecast";
 import Search from "./search";
 import Footer from "./footer";
 
-
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
