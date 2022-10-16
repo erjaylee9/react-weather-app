@@ -1,7 +1,6 @@
 import React from "react";
 export default function Header() {
   return (
-    <div className="container">
       <div ClassName="Header">
         <div className="heading">
           <h1>
@@ -26,6 +25,5 @@ export default function Header() {
           </h2>
         </div>
       </div>
-    </div>
   );
 }

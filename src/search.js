@@ -1,11 +1,17 @@
 import React from "react";
 export default function Search() {
   return (
+    <div class="form">
     <form>
-      <input type="search" id="city-search" placeholder="Search for a city" />
-      <button className="btn btn-warning" id="special-button">
-        Search
-      </button>
-    </form>
+      <div class="row">
+        <div class="col-9">
+          <input type="search" id="city-search" placeholder="Search for a city" class="form-control" />
+        </div>
+        <div class="col-3">
+          <input type="submit" class="btn btn-primary w-100" value="Search" />
+        </div>
+      </div>
+      </form>
+      </div>
   );
 }

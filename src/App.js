@@ -4,17 +4,19 @@ import Forecast from "./forecast";
 import Search from "./search";
 import Footer from "./footer";
 
+import "./weather.css";
 import "./App.css";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="container">
         <Header />
         <Forecast />
         <Search />
-        <Footer />
-      </header>
+      </div>
+      <Footer />
     </div>
   );
 }
