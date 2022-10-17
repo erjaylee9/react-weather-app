@@ -1,7 +1,7 @@
 import React from "react";
 export default function Header() {
   return (
-      <div ClassName="Header">
+      <div className="Header">
         <div className="heading">
           <h1>
             <img
@@ -14,13 +14,11 @@ export default function Header() {
             <div id="current-time">Tuesday 16:00</div>
           </h1>
           <h2>
-            <span className="temperature" id="temperature">
-              {" "}
-              80{" "}
-            </span>
-            <span className="temps">
-              {" "}
-              <sup> °F </sup>{" "}
+            <span className="temperature"> {temperature} </span>
+             
+            <span className="unit">
+           
+               °F 
             </span>
           </h2>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 export default function Forecast() {
   return (
     <div className="Forecast">
-      <div class="weather-details">
+      <div className="weather-details">
         <ul>
           <li id="description">Sunny</li>
           <li>
@@ -14,19 +14,19 @@ export default function Forecast() {
           </li>
         </ul>
       </div>
-      <div class="forecast" id="forecast">
-        <div class="row">
-          <div class="col-2">
-            <div class="forecast-date">Monday </div>
+      <div className="forecast" id="forecast">
+        <div className="row">
+          <div className="col-2">
+            <div className="forecast-date">Monday </div>
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/sunny.png
 "
               width="60"
               alt="icon"
             />
-            <div class="forecast-temperatures">
-              <span class="forecast-max-temp"> 70° </span>
-              <span class="forecast-min-temp"> 68° </span>
+            <div className="forecast-temperatures">
+              <span className="forecast-max-temp"> 70° </span>
+              <span className="forecast-min-temp"> 68° </span>
             </div>
           </div>
         </div>
