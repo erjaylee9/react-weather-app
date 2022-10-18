@@ -5,13 +5,11 @@ export default function Header(props) {
         <div className="heading">
           <h1>
             <img
-              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png
-"
-              id="icon"
-              alt="icon"
+              src={props.iconUrl}
+              alt={props.description}
             />
           <br /> <div id="city">{props.city} </div>
-            <div id="current-time">Tuesday 16:00</div>
+          <div id="current-time">{props.date}</div>
           </h1>
           <h2>
             <span className="temperature"> {props.temperature} </span>

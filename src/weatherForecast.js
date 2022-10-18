@@ -4,9 +4,9 @@ export default function Forecast(props) {
     <div className="Forecast">
       <div className="weather-details">
         <ul>
-          <li id="description">sunny</li>
+          <li id="description">{props.description}</li>
           <li>
-            Humidity: <span id="humidity"></span>%
+            Humidity: <span id="humidity">{props.humidity}</span>%
           </li>
           <li>
             Wind: <span id="wind">{props.wind} </span> mph

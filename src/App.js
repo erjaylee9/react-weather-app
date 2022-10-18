@@ -9,23 +9,27 @@ import "./Weather.css";
 import "./App.css";
 
 export default function App() {
-  const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ready:false});
   function handleResponse(response) {
     setWeatherData({
+      ready: true,
       temperature: response.data.main.temp,
-      wind: 12,
+      humidity: response.data.main.humidity,
+      date: "Wednesday, 07: 00",
+      description: response.data.weather[0].description,
+      iconUrl:"https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+      wind: response.data.wind.speed,
       city: response.data.name,
     });
-     setReady(true);
+  
     
   }
-  if (ready) {
+  if (weatherData.ready) {
     return (
       <div className="App">
         <div className="container">
-          <Header temperature={Math.round(weatherData.temperature)} city={weatherData.city} />
-          <Forecast wind={weatherData.wind} />
+          <Header temperature={Math.round(weatherData.temperature)} city={weatherData.city} date={weatherData.date} iconUrl={weatherData.iconUrl} />
+          <Forecast description={weatherData.description} wind={weatherData.wind} humidity={weatherData.humidity} />
           <Search />
         </div>
         <Footer />
