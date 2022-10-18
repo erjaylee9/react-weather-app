@@ -1,16 +1,16 @@
 import React from "react";
-export default function Forecast() {
+export default function Forecast(props) {
   return (
     <div className="Forecast">
       <div className="weather-details">
         <ul>
-          <li id="description">Sunny</li>
+          <li id="description">sunny</li>
           <li>
             {" "}
             Humidity: <span id="humidity"></span>%
           </li>
           <li>
-            Wind: <span id="wind"></span> mph
+            Wind: <span id="wind">{props.weatherData.wind} </span> mph
           </li>
         </ul>
       </div>

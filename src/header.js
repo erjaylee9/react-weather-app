@@ -1,5 +1,5 @@
 import React from "react";
-export default function Header() {
+export default function Header(props) {
   return (
       <div className="Header">
         <div className="heading">
@@ -10,15 +10,15 @@ export default function Header() {
               id="icon"
               alt="icon"
             />
-            <br /> <div id="city">New York</div>
+          <br /> <div id="city">{props.weatherData.city} </div>
             <div id="current-time">Tuesday 16:00</div>
           </h1>
           <h2>
-            <span className="temperature"> {temperature} </span>
+            <span className="temperature"> {props.weatherData.temperature} </span>
              
             <span className="unit">
            
-               °F 
+               °C 
             </span>
           </h2>
         </div>

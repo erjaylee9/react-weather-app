@@ -8,7 +8,7 @@ export default function Search() {
           <input type="search" id="city-search" placeholder="Search for a city" class="form-control" />
         </div>
         <div class="col-3">
-          <input type="submit" class="btn btn-primary w-100" value="Search" />
+          <input type="submit" className="btn btn-primary w-100" value="Search" />
         </div>
       </div>
       </form>

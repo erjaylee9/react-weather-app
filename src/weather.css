@@ -31,6 +31,16 @@ ul {
 #current-time {
   font-size: 20px;
 }
+.temperature {
+    font-size:35px;
+}
+.unit {
+    font-size:18px;
+    position:relative;
+    bottom:15px;
+    right:12px;
+    
+}
 h2 {
   padding-top: 0;
 }
