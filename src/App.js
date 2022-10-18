@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Header from "./Header";
-import Forecast from "./Forecast";
-import Search from "./Search";
-import Footer from "./Footer";
+import Header from "./weatherHeader";
+import Forecast from "./weatherForecast";
+import Search from "./weathertSearch";
+import Footer from "./weatherFooter";
 
 import "./Weather.css";
 import "./App.css";
@@ -24,8 +24,7 @@ export default function App() {
     return (
       <div className="App">
         <div className="container">
-          <Header temperature={Math.round(weatherData.temperature)} />
-          <Header city={weatherData.city} />
+          <Header temperature={Math.round(weatherData.temperature)} city={weatherData.city} />
           <Forecast wind={weatherData.wind} />
           <Search />
         </div>
@@ -35,7 +34,7 @@ export default function App() {
   } else {
     const apiKey = "6c5621af472ccc1d447bcf74c7a52dd4";
     let city = "New York";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${weatherData.city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then(handleResponse);
     return "loading..";

@@ -6,11 +6,10 @@ export default function Forecast(props) {
         <ul>
           <li id="description">sunny</li>
           <li>
-            {" "}
             Humidity: <span id="humidity"></span>%
           </li>
           <li>
-            Wind: <span id="wind">{props.weatherData.wind} </span> mph
+            Wind: <span id="wind">{props.wind} </span> mph
           </li>
         </ul>
       </div>

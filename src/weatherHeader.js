@@ -10,11 +10,11 @@ export default function Header(props) {
               id="icon"
               alt="icon"
             />
-          <br /> <div id="city">{props.weatherData.city} </div>
+          <br /> <div id="city">{props.city} </div>
             <div id="current-time">Tuesday 16:00</div>
           </h1>
           <h2>
-            <span className="temperature"> {props.weatherData.temperature} </span>
+            <span className="temperature"> {props.temperature} </span>
              
             <span className="unit">
            
