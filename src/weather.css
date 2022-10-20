@@ -85,3 +85,7 @@ input:focus {
   display: inline-block;
   vertical-align: middle;
 }
+
+.FormattedDate {
+  font-weight: bold;
+}

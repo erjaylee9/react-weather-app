@@ -9,7 +9,7 @@ export default function Header(props) {
               alt={props.description}
             />
           <br /> <div id="city">{props.city} </div>
-          <div id="current-time">{props.date}</div>
+          <div id="current-time"></div>
           </h1>
           <h2>
             <span className="temperature"> {props.temperature} </span>
