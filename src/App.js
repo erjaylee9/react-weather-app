@@ -5,7 +5,7 @@ import Forecast from "./weatherForecast";
 import Footer from "./weatherFooter";
 import FormattedDate from "./FormattedDate";
 
-import "./Weather.css";
+import "./WeatherStyles.css";
 import "./App.css";
 
 
@@ -20,7 +20,7 @@ export default function App(props) {
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       wind: response.data.wind.speed,
       city: response.data.name,
     });
