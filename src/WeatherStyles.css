@@ -32,14 +32,18 @@ ul {
   font-size: 20px;
 }
 .temperature {
-    font-size:35px;
+    font-size:40px;
 }
 .unit {
-    font-size:18px;
+    font-size:20px;
     position:relative;
     bottom:15px;
     right:12px;
     
+}
+.unit a {
+  text-decoration: none;
+  color:#212529;
 }
 h2 {
   padding-top: 0;
