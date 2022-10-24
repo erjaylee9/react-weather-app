@@ -57,6 +57,7 @@ function handleCityChange(event, props) {
             description={weatherData.description}
             wind={weatherData.wind}
             humidity={weatherData.humidity}
+            iconUrl={weatherData.iconUrl}
           />
           <div class="form">
             <form onSubmit={handleSubmit}>

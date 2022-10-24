@@ -17,12 +17,7 @@ export default function Forecast(props) {
         <div className="row">
           <div className="col-2">
             <div className="forecast-date">Monday </div>
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png
-"
-              width="60"
-              alt="icon"
-            />
+            <img src={props.iconUrl} alt={props.description} />
             <div className="forecast-temperatures">
               <span className="forecast-max-temp"> 70° </span>
               <span className="forecast-min-temp"> 68° </span>
