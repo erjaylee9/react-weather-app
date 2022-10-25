@@ -18,7 +18,7 @@ export default function WeatherForecastDay(props) {
 
         let days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
-        return days [day];
+        return days[day];
     }
     
 
