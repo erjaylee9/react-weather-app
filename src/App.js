@@ -28,7 +28,7 @@ export default function App(props) {
   }
 
   function search() {
-    const apiKey = "6c5621af472ccc1d447bcf74c7a52dd4";
+    const apiKey = "b95f179627c8dd37f41e1be6e3250e19";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then(handleResponse);
@@ -58,7 +58,6 @@ function handleCityChange(event, props) {
             description={weatherData.description}
             wind={weatherData.wind}
             humidity={weatherData.humidity}
-            iconUrl={weatherData.iconUrl}
             coords={weatherData.coords}
           />
           <div className="form">
