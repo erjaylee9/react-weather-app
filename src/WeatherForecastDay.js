@@ -23,17 +23,16 @@ export default function WeatherForecastDay(props) {
     
 
     return (
-        <div>
-            <div className="forecast-date">{day()} </div>
-            <img src={props.data.weather[0].icon} alt={props.data.weather[0].description} />
-            <div className="forecast-temperatures">
-                <span className="forecast-max-temp">
-                    {maxTemperature()}
-                </span>
-                <span className="forecast-min-temp">
-                    {minTemperature()}
-                </span>
-            </div>
+      <div>
+        <div className="forecast-date">{day()} </div>
+        <img
+          src={`https://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
+          alt={props.data.weather[0].description}
+        />
+        <div className="forecast-temperatures">
+          <span className="forecast-max-temp">{maxTemperature()}</span>
+          <span className="forecast-min-temp">{minTemperature()}</span>
         </div>
+      </div>
     );
 }
