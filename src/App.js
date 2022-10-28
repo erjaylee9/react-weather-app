@@ -75,6 +75,7 @@ function handleCityChange(event, props) {
                 <div className="col-3">
                   <input
                     type="submit"
+                    id="search"
                     className="btn btn-primary w-100"
                     value="Search"
                   />
